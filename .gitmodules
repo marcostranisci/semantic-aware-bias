@@ -1,3 +1,18 @@
 [submodule "corpora/AppReddit"]
 	path = corpora/AppReddit
 	url = git@github.com:marcostranisci/AppReddit.git
+[submodule "corpora/MoralConvITA"]
+	path = corpora/MoralConvITA
+	url = git@github.com:marcostranisci/MoralConvITA.git
+[submodule "corpora/bio-srl"]
+	path = corpora/bio-srl
+	url = git@github.com:marcostranisci/bio-srl.git
+[submodule "corpora/WikiBio"]
+	path = corpora/WikiBio
+	url = git@github.com:marcostranisci/WikiBio.git
+[submodule "ontologies/o-dang"]
+	path = ontologies/o-dang
+	url = git@github.com:marcostranisci/o-dang.git
+[submodule "ontologies/World-Literature-Knowledge-Graph"]
+	path = ontologies/World-Literature-Knowledge-Graph
+	url = git@github.com:marcostranisci/World-Literature-Knowledge-Graph.git

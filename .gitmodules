@@ -1,0 +1,3 @@
+[submodule "corpora/AppReddit"]
+	path = corpora/AppReddit
+	url = git@github.com:marcostranisci/AppReddit.git

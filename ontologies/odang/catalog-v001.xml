@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://purl.archive.org/people-and-media" uri="file:/home/marco/semantic-aware-bias/ontologies/pim/PeopleInTheMedia.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/lemon/ontolex" uri="http://www.w3.org/ns/lemon/all"/>
+    <uri id="Imports Wizard Entry" name="https://purl.archive.org/domain/urwriters" uri="file:/home/marco/semantic-aware-bias/ontologies/ur-o/urwriters.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&amp;link=http://www.ontologydesignpatterns.org/ont/dul/DUL.owl&amp;message=Ontology%20Ontology:DOLCE+DnS%20Ultralite&amp;from_page_id=1129&amp;update=update"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1710688193786" name="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-36/" uri="o-dang.rdf"/>
+    </group>
+</catalog>

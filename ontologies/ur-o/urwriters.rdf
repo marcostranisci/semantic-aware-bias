@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-30/"
      xml:base="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-30/"
+     xmlns:oa="http://www.w3.org/ns/oa#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://purl.archive.org/domain/urwriters">
+        <owl:imports rdf:resource="https://purl.archive.org/people-and-media"/>
         <owl:imports rdf:resource="https://purl.archive.org/domain/urbooks"/>
     </owl:Ontology>
     
@@ -151,7 +153,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17357">
         <owl:equivalentClass rdf:resource="https://purl.archive.org/domain/urwriters#Gender"/>
-        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
     </owl:Class>
     
 
@@ -292,7 +293,7 @@
     <!-- https://purl.archive.org/domain/urwriters#Gender -->
 
     <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Gender">
-        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#PersonalAttribute"/>
     </owl:Class>
     
 
@@ -365,12 +366,6 @@
     <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Minority">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group"/>
     </owl:Class>
-    
-
-
-    <!-- https://purl.archive.org/domain/urwriters#PersonalAttribute -->
-
-    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
     
 
 

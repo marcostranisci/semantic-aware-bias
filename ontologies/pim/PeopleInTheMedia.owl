@@ -97,9 +97,7 @@
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf">
-        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ObjectAggregate"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
     
 
 
@@ -324,12 +322,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
                 <owl:someValuesFrom rdf:resource="https://purl.archive.org/people-and-media#AnnotationScheme"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -575,6 +567,12 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
     </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/people-and-media#PersonalAttribute -->
+
+    <owl:Class rdf:about="https://purl.archive.org/people-and-media#PersonalAttribute"/>
     
 
 

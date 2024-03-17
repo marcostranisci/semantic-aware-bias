@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-30/"
+     xml:base="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-30/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://purl.archive.org/domain/urwriters">
+        <owl:imports rdf:resource="https://purl.archive.org/domain/urbooks"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#definesRole">
+        <rdfs:range rdf:resource="https://purl.archive.org/people-and-media#BiographicalRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:range rdf:resource="https://purl.archive.org/people-and-media#BiographicalRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor">
+        <rdfs:domain rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies">
+        <rdfs:domain rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+        <rdfs:range rdf:resource="https://purl.archive.org/domain/urwriters#MigrationPlan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasBeginning">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasEnd">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#hasIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#hasIdentifier"/>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#hasIntervalDate -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#hasIntervalDate">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#hasIntervalEndDate -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#hasIntervalEndDate">
+        <rdfs:subPropertyOf rdf:resource="https://purl.archive.org/domain/urwriters#hasIntervalDate"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#hasIntervalStartDate -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#hasIntervalStartDate">
+        <rdfs:subPropertyOf rdf:resource="https://purl.archive.org/domain/urwriters#hasIntervalDate"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#humanDevelopmentIndex -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#humanDevelopmentIndex"/>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#mobilityScore -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.archive.org/domain/urwriters#mobilityScore"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17357">
+        <owl:equivalentClass rdf:resource="https://purl.archive.org/domain/urwriters#Gender"/>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person"/>
+    
+
+
+    <!-- https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#E67 -->
+
+    <owl:Class rdf:about="https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#E67">
+        <owl:equivalentClass rdf:resource="https://purl.archive.org/domain/urwriters#Birth"/>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#E69 -->
+
+    <owl:Class rdf:about="https://cidoc-crm.org/html/cidoc_crm_v7.1.1.html#E69">
+        <owl:equivalentClass rdf:resource="https://purl.archive.org/domain/urwriters#Death"/>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Birth -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Birth">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Continent -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/domain/urwriters#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Country -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Country">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#CountryRole -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#CountryRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Death -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Death">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#EndDate -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#EndDate">
+        <owl:disjointWith rdf:resource="https://purl.archive.org/domain/urwriters#StartDate"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#FormerColony -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#FormerColony">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#CountryRole"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Gender -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Gender">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#MigationReason -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#MigationReason">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Migrating -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Migrating">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Migration -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Migration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.archive.org/domain/urwriters#MigrationPlan"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+                                <owl:allValuesFrom rdf:resource="https://purl.archive.org/domain/urwriters#MigrationPlan"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.archive.org/domain/urwriters#Migrating"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
+                        <owl:allValuesFrom rdf:resource="https://purl.archive.org/domain/urwriters#Migrating"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#MigrationPlan -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#MigrationPlan">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Minority -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Minority">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#PersonalAttribute -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#PersonalAttribute"/>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#PlaceOfArrival -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#PlaceOfArrival">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#CountryRole"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#PlaceOfDeparture -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#PlaceOfDeparture">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/domain/urwriters#CountryRole"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#StartDate -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#StartDate"/>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#TimeIndexedPersonStatus -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#TimeIndexedPersonStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Transnational -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Transnational">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/people-and-media#BiographicalRole"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/domain/urwriters#Year -->
+
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#Year"/>
+    
+
+
+    <!-- https://purl.archive.org/people-and-media#BiographicalRole -->
+
+    <owl:Class rdf:about="https://purl.archive.org/people-and-media#BiographicalRole">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/people-and-media#BiographicalSituation -->
+
+    <owl:Class rdf:about="https://purl.archive.org/people-and-media#BiographicalSituation">
+        <owl:disjointWith rdf:resource="https://purl.archive.org/people-and-media#Reception"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/people-and-media#Reception -->
+
+    <owl:Class rdf:about="https://purl.archive.org/people-and-media#Reception"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://purl.archive.org/domain/urwriters#FormerColony"/>
+            <rdf:Description rdf:about="https://purl.archive.org/domain/urwriters#PlaceOfArrival"/>
+            <rdf:Description rdf:about="https://purl.archive.org/domain/urwriters#PlaceOfDeparture"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/dc/elements/1.1/" uri="https://protege.stanford.edu/plugins/owl/dc/dublincore.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2006/time#2016" uri="http://www.w3.org/2006/time"/>
     <uri id="Imports Wizard Entry" name="https://purl.archive.org/people-and-media" uri="file:/home/marco/semantic-aware-bias/ontologies/pim/PeopleInTheMedia.owl"/>
     <uri id="Imports Wizard Entry" name="https://purl.archive.org/domain/urbooks" uri="urbooks.rdf"/>

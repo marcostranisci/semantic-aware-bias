@@ -1,12 +1,36 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-36/"
      xml:base="http://www.semanticweb.org/marco/ontologies/2024/2/untitled-ontology-36/"
+     xmlns:oa="http://www.w3.org/ns/oa#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://purl.archive.org/o-dang"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasBody -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/oa#hasBody"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasTarget -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/oa#hasTarget"/>
     
 
 
@@ -257,10 +281,27 @@
     
 
 
+    <!-- https://purl.archive.org/o-dang#Guidelines -->
+
+    <owl:Class rdf:about="https://purl.archive.org/o-dang#Guidelines">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/o-dang#HateSpeechDefinition"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/o-dang#Law"/>
+    </owl:Class>
+    
+
+
     <!-- https://purl.archive.org/o-dang#HateSpeechDefinition -->
 
     <owl:Class rdf:about="https://purl.archive.org/o-dang#HateSpeechDefinition">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.archive.org/o-dang#Law -->
+
+    <owl:Class rdf:about="https://purl.archive.org/o-dang#Law">
+        <rdfs:subClassOf rdf:resource="https://purl.archive.org/o-dang#HateSpeechDefinition"/>
     </owl:Class>
     
 

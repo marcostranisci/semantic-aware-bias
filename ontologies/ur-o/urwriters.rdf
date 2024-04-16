@@ -277,6 +277,7 @@
     <!-- https://purl.archive.org/domain/urwriters#EndDate -->
 
     <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#EndDate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instant"/>
         <owl:disjointWith rdf:resource="https://purl.archive.org/domain/urwriters#StartDate"/>
     </owl:Class>
     
@@ -387,7 +388,9 @@
 
     <!-- https://purl.archive.org/domain/urwriters#StartDate -->
 
-    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#StartDate"/>
+    <owl:Class rdf:about="https://purl.archive.org/domain/urwriters#StartDate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:Class>
     
 
 
